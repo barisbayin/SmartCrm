@@ -73,7 +73,7 @@ export class TranslateComponent implements  AfterViewInit, OnInit {
 	save() {
 
 		if (this.translateAddForm.valid) {
-			this.translate = Object.assign({}, this.translateAddForm.value)
+            this.translate = Object.assign({}, this.translateAddForm.value)
 
 			if (this.translate.id == 0)
 				this.addTranslate();
