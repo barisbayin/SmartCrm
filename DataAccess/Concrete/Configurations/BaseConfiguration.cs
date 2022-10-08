@@ -9,6 +9,10 @@ namespace DataAccess.Concrete.Configurations
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.CreationDate).IsRequired();
+            builder.Property(x => x.CreatedBy).IsRequired();
+
+
         }
     }
 }
