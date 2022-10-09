@@ -48,6 +48,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Translate> Translates { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Personnel> Personnels { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected IConfiguration Configuration { get; }
 

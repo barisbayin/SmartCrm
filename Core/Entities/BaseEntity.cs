@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
 using System.Text;
 
 namespace Core.Entities
 {
-    public class BaseEntity : IEntity
+    public class BaseEntity
     {
         public virtual int Id { get; set; }
         public bool Status { get; set; } = true;

@@ -3,7 +3,7 @@ using Core.Entities.Concrete;
 
 namespace Entities.Concrete
 {
-    public class Department : BaseEntity
+    public class Department : IEntity
     {
         public string DepartmentName { get; set; }
     }
